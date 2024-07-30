@@ -4,4 +4,9 @@ export default {
     emptyOutDir: true,
   },
   base: "/cv/",
+  resolve: {
+    alias: {
+      "@": "/src",
+    },
+  },
 };
