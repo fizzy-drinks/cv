@@ -3,4 +3,5 @@ export default {
     outDir: "_site",
     emptyOutDir: true,
   },
+  base: "/cv/",
 };
