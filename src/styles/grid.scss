@@ -1,0 +1,72 @@
+@import "./borders";
+
+main {
+    display: grid;
+    grid-template-areas:
+        ". . . . . c c c c c c c"
+        "w w w w w w w w . . . ."
+        ". . . . . p p p p p p p"
+        "b b b b b b b b b b b b";
+    grid-template-columns: repeat(12, 1fr);
+
+    @media print {
+        display: block
+    }
+}
+
+h2 {
+    @include b(0 0 0 2px);
+    margin: 0;
+    padding: 1rem;
+}
+
+.contact {
+    @include b(2px 0 0 2px);
+    flex: 1 1 auto;
+    grid-area: c;
+
+    h2 {
+        border-width: 0;
+    }
+}
+
+.work {
+    @include b(2px 0 0 0);
+    grid-area: w;
+
+    article {
+        overflow: auto;
+        margin-right: 3rem;
+        margin-left: 2rem;
+
+        &:first-of-type {
+            @include b(2px 2px 0 0);
+            margin-left: 0;
+        }
+
+        &:nth-child(even) {
+            @include b(2px 2px 0 0);
+        }
+
+        &:nth-child(odd) {
+            @include b(2px 0 0 2px);
+        }
+    }
+}
+
+.projects {
+    grid-area: p;
+    @include b(2px 0 0 0);
+
+    article {
+        overflow: auto;
+
+        &:nth-child(odd) {
+            @include b(2px 0 0 2px);
+        }
+
+        &:nth-child(even) {
+            @include b(2px 2px 0 0);
+        }
+    }
+}

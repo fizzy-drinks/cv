@@ -1,0 +1,15 @@
+:root {
+    --border-color: var(--hl);
+    --border-gradient: radial-gradient(transparent 30%, var(--hl) 140%);
+
+    @media print {
+        --border-color: black;
+        --border-gradient: none;
+    }
+}
+
+@mixin b($widths) {
+    border: 0 solid var(--border-color);
+    border-image: var(--border-gradient) 1;
+    border-width: $widths;
+}

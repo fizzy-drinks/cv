@@ -1,0 +1,42 @@
+@import "./borders";
+@import "./header";
+@import "./typography";
+@import "./grid";
+
+:root {
+    --bg: #111;
+    --hl: #d8ddbd;
+}
+
+html {
+    background-color: var(--bg);
+    margin: 0;
+    min-height: calc(100vh - 4px);
+    @include b(0 2px);
+    display: flex;
+
+    @media print {
+        @include b(0);
+    }
+
+    &::before,
+    &::after {
+        content: ' ';
+        display: block;
+        flex: 1 1 auto;
+        @include b(2px 0);
+    }
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1080px;
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    page-break-inside: avoid;
+}

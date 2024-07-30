@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --text: #e0e0e0;
+    --link-text: #cbe9e9;
+    --title-text: var(--hl);
+}
+
+@media print {
+    :root {
+        --text: black;
+        --link-text: blue;
+        --title-text: black;
+    }
+}
+
+body {
+    font-family: "JetBrains Mono", monospace;
+    line-height: 2em;
+    color: var(--text);
+}
+
+a {
+    color: var(--link-text);
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-text);
+}
+
+h1 {
+    font-size: 2em
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
