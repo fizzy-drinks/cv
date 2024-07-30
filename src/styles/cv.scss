@@ -17,6 +17,8 @@ html {
 
     @media print {
         @include b(0);
+        background-image: none;
+        background-color: white;
     }
 
     &::before,
