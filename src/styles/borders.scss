@@ -56,4 +56,23 @@ header {
 
 section {
     @include b(2px 0 0 0);
+
+    article {
+        overflow: auto;
+        margin-right: 3rem;
+        margin-left: 2rem;
+
+        &:first-of-type {
+            @include b(2px 2px 0 0);
+            margin-left: 0;
+        }
+
+        &:nth-child(even) {
+            @include b(2px 2px 0 0);
+        }
+
+        &:nth-child(odd) {
+            @include b(2px 0 0 2px);
+        }
+    }
 }
