@@ -1,29 +1,15 @@
 @import "./borders";
 
 header {
-    display: grid;
-    grid-template-areas:
-        "t t t t t t t t a a a a"
-        "p p p p p p p p a a a a";
-    grid-template-columns: repeat(12, 1fr);
-
     h1 {
-        grid-area: t;
         margin: 0;
         padding: 2rem;
         @include b(0 2px 0 0);
     }
 
     p {
-        grid-area: p;
         margin: 0;
         padding: 0 2em 2em;
         @include b(0 2px 0 0);
-    }
-
-    &::after {
-        content: ' ';
-        @include b(2px 0 0);
-        grid-area: a;
     }
 }
