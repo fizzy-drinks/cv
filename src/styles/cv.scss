@@ -10,6 +10,8 @@
 
 html {
     background-color: var(--bg);
+    background-image: linear-gradient(to bottom right, var(--hl) -500%, var(--bg) 100%);
+    background-attachment: fixed;
     margin: 0;
     min-height: calc(100vh - 4px);
     display: flex;
