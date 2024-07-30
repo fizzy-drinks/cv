@@ -18,12 +18,32 @@
     html {
         @include b(0 2px);
     }
+
+    header {
+        &::after {
+            @include b(2px 0 0);
+        }
+    }
 }
 
 h2 {
     @include b(0 0 0 2px);
     margin: 0;
     padding: 1rem;
+}
+
+header {
+    h1 {
+        margin: 0;
+        padding: 2rem;
+        @include b(0 2px 0 0);
+    }
+
+    p {
+        margin: 0;
+        padding: 0 2em 2em;
+        @include b(0 2px 0 0);
+    }
 }
 
 .contact {
