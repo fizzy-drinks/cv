@@ -1,55 +1,59 @@
 :root {
-    --bg: #111;
-    --hl: #d8ddbd;
+  --bg: #111;
+  --hl: #d8ddbd;
 }
 
 html {
-    background-color: var(--bg);
-    background-image: linear-gradient(to bottom right, var(--hl) -500%, var(--bg) 100%);
-    background-attachment: fixed;
-    margin: 0;
-    min-height: calc(100vh - 4px);
-    display: flex;
+  background-color: var(--bg);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--hl) -500%,
+    var(--bg) 100%
+  );
+  background-attachment: fixed;
+  margin: 0;
+  min-height: calc(100vh - 4px);
+  display: flex;
 
-    @media print {
-        border-width: 0;
-        background-image: none;
-        background-color: white;
-    }
+  @media print {
+    border-width: 0;
+    background-image: none;
+    background-color: white;
+  }
 
-    &::before,
-    &::after {
-        content: ' ';
-        display: block;
-        flex: 1 1 auto;
-        border: var(--border-base);
-        border-width: 2px 0;
-    }
+  &::before,
+  &::after {
+    content: " ";
+    display: block;
+    flex: 1 1 auto;
+    border: var(--border-base);
+    border-width: 2px 0;
+  }
 }
 
 body {
-    margin: 0 auto;
-    max-width: 1080px;
-    flex: 1 1 auto;
+  margin: 0 auto;
+  max-width: 1080px;
+  flex: 1 1 auto;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
 h2,
 h3,
 p {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 h2 {
-    border: var(--border-base);
-    border-width: 0 0 0 2px;
-    margin: 0;
-    padding: 1rem;
+  border: var(--border-base);
+  border-width: 0 0 0 2px;
+  margin: 0;
+  padding: 1rem;
 }
 
 article {
-    page-break-inside: avoid;
+  page-break-inside: avoid;
 }

@@ -1,41 +1,41 @@
 :root {
-    --text: #e0e0e0;
-    --link-text: #cbe9e9;
-    --title-text: var(--hl);
+  --text: #e0e0e0;
+  --link-text: #cbe9e9;
+  --title-text: var(--hl);
 }
 
 @media print {
-    :root {
-        --text: black;
-        --link-text: blue;
-        --title-text: black;
-    }
+  :root {
+    --text: black;
+    --link-text: blue;
+    --title-text: black;
+  }
 }
 
 body {
-    font-family: "JetBrains Mono", monospace;
-    line-height: 2em;
-    color: var(--text);
+  font-family: "JetBrains Mono", monospace;
+  line-height: 2em;
+  color: var(--text);
 }
 
 a {
-    color: var(--link-text);
+  color: var(--link-text);
 }
 
 h1,
 h2,
 h3 {
-    color: var(--title-text);
+  color: var(--title-text);
 }
 
 h1 {
-    font-size: 2em
+  font-size: 2em;
 }
 
 h2 {
-    font-size: 1.75em;
+  font-size: 1.75em;
 }
 
 h3 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }

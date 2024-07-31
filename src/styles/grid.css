@@ -1,50 +1,50 @@
 @media screen and (min-width: 640px) {
-    header {
-        display: grid;
-        grid-template-areas:
-            "t t t t t t t t a a a a"
-            "p p p p p p p p a a a a";
-        grid-template-columns: repeat(12, 1fr);
+  header {
+    display: grid;
+    grid-template-areas:
+      "t t t t t t t t a a a a"
+      "p p p p p p p p a a a a";
+    grid-template-columns: repeat(12, 1fr);
 
-        h1 {
-            grid-area: t;
-        }
-
-        p {
-            grid-area: p;
-        }
-
-        &::after {
-            content: ' ';
-            border: var(--border-base);
-            border-width: 2px 0 0;
-            grid-area: a;
-        }
+    h1 {
+      grid-area: t;
     }
 
-    main {
-        display: grid;
-        grid-template-areas:
-            ". . . . . c c c c c c c"
-            "w w w w w w w w . . . ."
-            ". . . . . p p p p p p p"
-            "b b b b b b b b b b b b";
-        grid-template-columns: repeat(12, 1fr);
-
-        @media print {
-            display: block
-        }
+    p {
+      grid-area: p;
     }
 
-    .contact {
-        grid-area: c;
+    &::after {
+      content: " ";
+      border: var(--border-base);
+      border-width: 2px 0 0;
+      grid-area: a;
     }
+  }
 
-    .work {
-        grid-area: w;
-    }
+  main {
+    display: grid;
+    grid-template-areas:
+      ". . . . . c c c c c c c"
+      "w w w w w w w w . . . ."
+      ". . . . . p p p p p p p"
+      "b b b b b b b b b b b b";
+    grid-template-columns: repeat(12, 1fr);
 
-    .projects {
-        grid-area: p;
+    @media print {
+      display: block;
     }
+  }
+
+  .contact {
+    grid-area: c;
+  }
+
+  .work {
+    grid-area: w;
+  }
+
+  .projects {
+    grid-area: p;
+  }
 }

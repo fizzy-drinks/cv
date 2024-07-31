@@ -1,4 +1,4 @@
-import './BackToTop.css'
+import "./BackToTop.css";
 
 class BackToTopButton extends HTMLElement {
   connectedCallback() {
