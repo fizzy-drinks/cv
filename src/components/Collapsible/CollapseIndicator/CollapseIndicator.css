@@ -1,0 +1,9 @@
+cv-collapse-indicator {
+  display: inline-block;
+  margin-right: 0.33em;
+  font-size: 0.75em;
+
+  @media print {
+    display: none;
+  }
+}

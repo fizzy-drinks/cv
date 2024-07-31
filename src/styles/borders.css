@@ -57,18 +57,18 @@ section {
     margin-right: 3rem;
     margin-left: 2rem;
 
-    &:first-of-type {
+    &:first-child {
       border: var(--border-base);
       border-width: 2px 2px 0 0;
       margin-left: 0;
     }
 
-    &:nth-child(even) {
+    &:nth-child(odd) {
       border: var(--border-base);
       border-width: 2px 2px 0 0;
     }
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
       border: var(--border-base);
       border-width: 2px 0 0 2px;
     }

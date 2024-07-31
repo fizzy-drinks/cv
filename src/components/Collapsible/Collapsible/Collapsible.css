@@ -1,0 +1,14 @@
+cv-collapsible {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: all 600ms ease;
+
+  &[collapse] {
+    grid-template-rows: 0fr;
+  }
+
+  & > * {
+    overflow: hidden;
+  }
+}
