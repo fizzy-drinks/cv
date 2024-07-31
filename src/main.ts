@@ -1,4 +1,7 @@
-import "./styles/cv.scss";
+import "./styles/borders.css";
+import "./styles/grid.css";
+import "./styles/typography.css";
+import "./styles/cv.css";
 
 import BackToTopButton from "./BackToTop/BackToTop";
 

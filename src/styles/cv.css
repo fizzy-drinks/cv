@@ -1,7 +1,3 @@
-@import "./borders";
-@import "./typography";
-@import "./grid";
-
 :root {
     --bg: #111;
     --hl: #d8ddbd;
@@ -16,7 +12,7 @@ html {
     display: flex;
 
     @media print {
-        @include b(0);
+        border-width: 0;
         background-image: none;
         background-color: white;
     }
@@ -26,7 +22,8 @@ html {
         content: ' ';
         display: block;
         flex: 1 1 auto;
-        @include b(2px 0);
+        border: var(--border-base);
+        border-width: 2px 0;
     }
 }
 
@@ -37,6 +34,20 @@ body {
 
     display: flex;
     flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 1rem;
+}
+
+h2 {
+    border: var(--border-base);
+    border-width: 0 0 0 2px;
+    margin: 0;
+    padding: 1rem;
 }
 
 article {
