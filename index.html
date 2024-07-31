@@ -12,7 +12,9 @@
   <link href="src/styles/borders.css" rel="preload" as="style" onload="this.rel = 'stylesheet'">
   <link href="src/styles/grid.css" rel="preload" as="style" onload="this.rel = 'stylesheet'">
   <link href="src/styles/typography.css" rel="preload" as="style" onload="this.rel = 'stylesheet'">
-  <link href="src/styles/cv.css" rel="preload" as="style" onload="this.rel = 'stylesheet'">
+  <style>
+    @import url(src/styles/cv.css);
+  </style>
   <title>Gabriel::CV</title>
 </head>
 
@@ -31,6 +33,14 @@
         <li>👨‍💻 check out my <a href="https://github.com/fizzy-drinks" target="_blank" rel="noreferrer">GitHub</a>
         </li>
         <li>🌐 or visit <a href="https://chikorito.land" target="_blank" rel="noreferrer">chikorito.land</a>
+        </li>
+        <li class="no-print">
+          <cv-collapse collapsible="print-instructions">
+            💡 this page is print-friendly!
+          </cv-collapse>
+          <cv-collapsible id="print-instructions" collapse>
+            <small>(it looks better if you remove borders and enable background graphics)</small>
+          </cv-collapsible>
         </li>
       </ul>
     </section>

@@ -2,11 +2,6 @@
   --border-color: var(--hl);
   --border-base: 0 solid var(--border-color);
   --border-gradient: radial-gradient(transparent 30%, var(--hl) 140%) 1;
-
-  @media print {
-    --border-color: black;
-    --border-gradient: none;
-  }
 }
 
 @media screen and (min-width: 640px) {
@@ -53,7 +48,7 @@ section {
   border-width: 2px 0 0 0;
 
   article {
-    overflow: auto;
+    overflow: hidden;
     margin-right: 3rem;
     margin-left: 2rem;
 

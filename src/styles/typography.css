@@ -4,14 +4,6 @@
   --title-text: var(--hl);
 }
 
-@media print {
-  :root {
-    --text: black;
-    --link-text: blue;
-    --title-text: black;
-  }
-}
-
 body {
   font-family: "JetBrains Mono", monospace;
   line-height: 2em;
